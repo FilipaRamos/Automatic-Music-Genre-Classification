@@ -20,11 +20,14 @@ def import_y(filepath):
     return numpy.loadtxt(filepath)
 
 def export_data_accuracy(y):
+    y = y.astype(int)
+    
     with open('pred_label_accuracy.csv', 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow(['Sample_id','Sample_label'])
         for i in range(0, len(y)):
             index = i+1
+            print(index)
             writer.writerow([str(index),str(y[i])])
 
 def export_data_log_loss(y):
