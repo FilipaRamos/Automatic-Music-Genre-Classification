@@ -1,17 +1,10 @@
 
 # coding: utf-8
-
-# In[1]:
-
-
 import numpy
 import math
 import csv
 from sklearn import linear_model, svm
 from sklearn.model_selection import GridSearchCV
-
-
-# In[2]:
 
 
 def import_features(filepath):
@@ -26,12 +19,8 @@ def import_features(filepath):
         return data
 
 
-# In[3]:
-
-
 def import_y(filepath):
     return numpy.loadtxt(filepath)
-# In[5]:
 
 
 def export_data(y):
@@ -41,9 +30,6 @@ def export_data(y):
         for i in range(0, len(y)):
             index = i+1
             writer.writerow([str(index),str(int(y[i]))])
-
-
-# In[6]:
 
 
 def get_classifier(x, y):
@@ -59,20 +45,12 @@ def get_classifier(x, y):
     reg = svm.SVC(C=clf.best_estimator_.C, kernel=clf.best_estimator_.kernel, gamma=clf.best_estimator_.gamma).fit(x, y)
     return reg
 
-
-# In[7]:
-
-
 def classify(reg, x):
     return reg.predict(x)
 
 
-# In[ ]:
-
-
 def calculate_p(reg, x):
-    return reg.predict_proba([x])
-
+    return reg.predict_proba(x)
 
 
 def main():

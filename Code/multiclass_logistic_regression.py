@@ -97,12 +97,12 @@ def log_loss_test(scaling=False):
 def main():
     accuracy_test(True)
     print("accuracy_test")
-    accuracy_test(False)
-    print("accuracy_test")
+    #accuracy_test(False)
+    #print("accuracy_test")
     log_loss_test(True)
     print("log_loss_test")
-    log_loss_test(False)
-    print("log_loss_test")
+    #log_loss_test(False)
+    #print("log_loss_test")
 
 if __name__ == "__main__":
     main()
