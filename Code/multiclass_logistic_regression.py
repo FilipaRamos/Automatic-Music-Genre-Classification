@@ -42,7 +42,7 @@ def export_data_log_loss(y):
             writer.writerow(temp)
 
 def get_classifier(x, y):
-    reg = linear_model.LogisticRegressionCV(fit_intercept=False, Cs=numpy.logspace(2,8,6), multi_class='multinomial')
+    reg = linear_model.LogisticRegressionCV(fit_intercept=False, multi_class='multinomial')
     reg.fit(x, y)
     return reg
 
