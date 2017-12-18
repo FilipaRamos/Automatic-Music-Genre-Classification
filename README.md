@@ -39,11 +39,11 @@ Besides this, validation was also taken upon with the generation of confusion ma
 
 The output file for the accuracy competition had the form of Sample id followed by Sample Genre. An example can be seen below:
 
-![Accuracy](https://raw.githubusercontent.com/FilipaRamos/Automatic-Music-Genre-Classification/Resources/output_accuracy.png)
+![Accuracy](Automatic-Music-Genre-Classification/Resources/output_accuracy.png)
 
 The output file for the log loss metric showcased the Sample id paired with a probability value for all Sample genres. Again, an example can be seen below.
 
-|[Log Loss](https://raw.githubusercontent.com/FilipaRamos/Automatic-Music-Genre-Classification/Resources/output_log_loss.png)
+|[Log Loss](Automatic-Music-Genre-Classification/Resources/output_log_loss.png)
 
 
 ## Built With
