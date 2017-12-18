@@ -43,7 +43,7 @@ The output file for the accuracy competition had the form of Sample id followed 
 
 The output file for the log loss metric showcased the Sample id paired with a probability value for all Sample genres. Again, an example can be seen below.
 
-|[Log Loss](Resources/output_log_loss.png)
+![Log Loss](Resources/output_log_loss.png)
 
 
 ## Built With
